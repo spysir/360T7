@@ -164,6 +164,18 @@ jobs:
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
 
+    - name: Apprise-Gotify push
+      continue-on-error: true
+      if: steps.regular.outcome == 'success'
+      uses: cstuder/apprise-ga@master
+      with:
+        title: "固件编译成功"
+        message: |
+                ${{matrix.target}} 固件编译成功啦!
+                https://github.com/spysir/build-actions
+      env:
+        APPRISE_URL: ${{ secrets.APPRISE_URL }}
+    
     - name: Delete workflow runs
       uses: GitRML/delete-workflow-runs@main
       with:
