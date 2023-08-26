@@ -166,13 +166,13 @@ jobs:
 
     - name: Apprise-Gotify push
       continue-on-error: true
-      if: steps.regular.outcome == 'success'
+      if: steps.tag.outputs.status == 'success'
       uses: cstuder/apprise-ga@master
       with:
         title: "固件编译成功"
         message: |
-                ${{matrix.target}} 固件编译成功啦!
-                https://github.com/spysir/build-actions
+                openwrt-360T7 固件编译成功啦!
+                https://github.com/spysir/360t7
       env:
         APPRISE_URL: ${{ secrets.APPRISE_URL }}
     
