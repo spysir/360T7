@@ -18,3 +18,6 @@
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 git clone https://github.com/tty228/luci-app-wechatpush package/luci-app-wechatpush
+
+# Add a theme
+git clone https://github.com/spysir/luci-theme-argon package/luci-theme-argon
