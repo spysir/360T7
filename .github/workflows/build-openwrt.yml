@@ -176,7 +176,7 @@ jobs:
       with:
         title: "固件编译成功"
         message: |
-                openwrt-360T7 固件编译成功啦!
+                OpenWrt-360T7 固件编译成功啦!
                 https://github.com/spysir/360t7
       env:
         APPRISE_URL: ${{ secrets.APPRISE_URL }}
