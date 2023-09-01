@@ -12,7 +12,8 @@
 name: Update Checker
 
 env:
-  REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
+  REPO_URL: https://github.com/spysir/immortalwrt-mt798x
+ # REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
   REPO_BRANCH: openwrt-21.02
 
 on:
