@@ -14,6 +14,9 @@
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 # 把默认主题bootstrap改成argon为源码必选主题（可自行修改您要的,主题名称必须对,比如下面代码的[argon],源码内必须有该主题,要不然编译失败）
 sed -i "s/bootstrap/argon/ig" feeds/luci/collections/luci/Makefile
+# 增加个性名字 ${Author} 默认为你的github帐号,修改时候把 ${Author} 替换成你要的
+sed -i "s/OpenWrt /${Author} Compiled in $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" "package/emortal/default-settings/files/99-default-settings"
+
 
 # 修改插件名字
 sed -i 's/"aMule设置"/"电驴下载"/g' `egrep "aMule设置" -rl ./`
