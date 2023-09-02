@@ -63,6 +63,7 @@ jobs:
         
         cd openwrt
         rm -rf package/feeds/luci/themes/luci-theme-argon
+        rm -rf package/feeds/luci/applications/luci-app-argon-config
     
     - name: 加载自定义源
       run: |
