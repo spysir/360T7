@@ -16,7 +16,7 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 sed -i "s/bootstrap/argon/ig" feeds/luci/collections/luci/Makefile
 # 增加个性名字 ${Author} 默认为你的github帐号,修改时候把 ${Author} 替换成你要的
 # sed -i "s/OpenWrt /${Author} compiled in $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" "package/emortal/default-settings/files/99-default-settings"
-sed -i "s/OpenWrt /$(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" "package/emortal/default-settings/files/99-default-settings"
+sed -i "s/OpenWrt /$(TZ=UTC-8 date "+%Y.%m.%d") @ ImmortalWrt /g" "package/emortal/default-settings/files/99-default-settings"
 
 # 修改插件名字
 sed -i 's/"aMule设置"/"电驴下载"/g' `egrep "aMule设置" -rl ./`
