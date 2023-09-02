@@ -21,4 +21,4 @@ git clone https://github.com/tty228/luci-app-wechatpush package/luci-app-wechatp
 
 # Add a theme
 git clone https://github.com/spysir/luci-theme-argon package/luci-theme-argon
-git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
+git clone https://github.com/spysir/luci-app-argon-config package/luci-app-argon-config
