@@ -64,7 +64,8 @@ jobs:
         cd openwrt
         rm -rf package/feeds/luci/themes/luci-theme-argon
         rm -rf package/feeds/luci/applications/luci-app-argon-config
-    
+        rm -rf package/feeds/luci/applications/luci-app-ddns-go
+        
     - name: 加载自定义源
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
