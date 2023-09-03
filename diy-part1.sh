@@ -17,8 +17,10 @@
 # echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
+# Add apps
 git clone https://github.com/tty228/luci-app-wechatpush package/luci-app-wechatpush
+git clone https://github.com/sirpdboy/luci-app-ddns-go package/luci-app-ddns-go
 
-# Add a theme
+# Add themes
 git clone https://github.com/spysir/luci-theme-argon package/luci-theme-argon
 git clone https://github.com/spysir/luci-app-argon-config package/luci-app-argon-config
